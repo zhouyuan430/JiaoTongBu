@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <scenes>
+        <!--Log In View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController storyboardIdentifier="LogIn" id="vXZ-lx-hvc" customClass="LogInViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="A8s-Q9-WQD"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZKq-ZP-05x"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="用户名" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="d4l-SP-Qqk">
+                                <rect key="frame" x="91" y="231" width="138" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="138" id="nxn-bR-JeI"/>
+                                    <constraint firstAttribute="height" constant="30" id="scq-hs-JQl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="密码" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fjn-dT-fxj">
+                                <rect key="frame" x="91" y="275" width="138" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="PeR-q3-0uW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BRY-ip-NPL">
+                                <rect key="frame" x="117" y="68" width="86" height="79"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="79" id="7o4-sO-GoW"/>
+                                    <constraint firstAttribute="width" constant="86" id="euV-So-eQ9"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iZd-33-MJI">
+                                <rect key="frame" x="97" y="328" width="126" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="WZ5-uI-jPx"/>
+                                </constraints>
+                                <state key="normal" title="登录">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="logInButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Fxj-i7-xQh"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="资产信息管理" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GFk-Ny-syo">
+                                <rect key="frame" x="109" y="173" width="102" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="d4l-SP-Qqk" secondAttribute="centerX" id="0OT-zN-Jj4"/>
+                            <constraint firstAttribute="centerX" secondItem="BRY-ip-NPL" secondAttribute="centerX" id="1HD-Kk-YSR"/>
+                            <constraint firstItem="d4l-SP-Qqk" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="91" id="5N1-p2-Ukb"/>
+                            <constraint firstItem="iZd-33-MJI" firstAttribute="top" secondItem="fjn-dT-fxj" secondAttribute="bottom" constant="23" id="78u-Cl-skV"/>
+                            <constraint firstItem="BRY-ip-NPL" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="117" id="9RQ-xP-r0D"/>
+                            <constraint firstItem="fjn-dT-fxj" firstAttribute="top" secondItem="d4l-SP-Qqk" secondAttribute="bottom" constant="14" id="ACd-Aa-z6T"/>
+                            <constraint firstItem="GFk-Ny-syo" firstAttribute="top" secondItem="BRY-ip-NPL" secondAttribute="bottom" constant="26" id="Cq6-Pc-egV"/>
+                            <constraint firstAttribute="centerX" secondItem="GFk-Ny-syo" secondAttribute="centerX" id="HBJ-h1-g0R"/>
+                            <constraint firstItem="d4l-SP-Qqk" firstAttribute="trailing" secondItem="fjn-dT-fxj" secondAttribute="trailing" id="IFD-Zi-Jgg"/>
+                            <constraint firstAttribute="trailing" secondItem="iZd-33-MJI" secondAttribute="trailing" constant="97" id="ILV-Z3-41c"/>
+                            <constraint firstAttribute="centerX" secondItem="iZd-33-MJI" secondAttribute="centerX" id="OfC-DO-Q9V"/>
+                            <constraint firstItem="BRY-ip-NPL" firstAttribute="top" secondItem="A8s-Q9-WQD" secondAttribute="bottom" constant="48" id="Tn7-JY-ToV"/>
+                            <constraint firstItem="d4l-SP-Qqk" firstAttribute="top" secondItem="BRY-ip-NPL" secondAttribute="bottom" constant="84" id="nvk-Xh-e0v"/>
+                            <constraint firstItem="iZd-33-MJI" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="97" id="s87-PT-vk2"/>
+                            <constraint firstItem="d4l-SP-Qqk" firstAttribute="leading" secondItem="fjn-dT-fxj" secondAttribute="leading" id="yDO-sG-0ku"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="logInButton" destination="iZd-33-MJI" id="HFn-R5-VNv"/>
+                        <outlet property="passwordTextField" destination="fjn-dT-fxj" id="Zkq-Yo-pcd"/>
+                        <outlet property="userNameTextField" destination="d4l-SP-Qqk" id="faF-X9-iql"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-935" y="-918"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="EYN-e9-rHc">
+            <objects>
+                <navigationController storyboardIdentifier="rootViewController" definesPresentationContext="YES" id="Bvb-eV-GA0" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xYN-2x-SHq">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Afh-QU-I0M" kind="relationship" relationship="rootViewController" id="C5D-V4-fez"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r6X-oy-vfR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-532" y="-918"/>
+        </scene>
+        <!--Root View Controller - 资产信息系统-->
+        <scene sceneID="opv-XN-7nG">
+            <objects>
+                <viewController id="Afh-QU-I0M" customClass="RootViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y5b-9H-fS3"/>
+                        <viewControllerLayoutGuide type="bottom" id="xz6-jh-E9l"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Zfu-rA-OGH">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Upz-L3-yAE">
+                                <rect key="frame" x="140" y="264" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="8Lk-3h-vqK"/>
+                                    <constraint firstAttribute="width" constant="40" id="9Jh-kf-Ah5"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XJ8-7w-Qia">
+                                <rect key="frame" x="130" y="174" width="60" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="k8a-Fu-kPh"/>
+                                    <constraint firstAttribute="height" constant="50" id="uMf-hQ-0Tp"/>
+                                </constraints>
+                                <state key="normal" title="个人呜呜呜呜呜呜呜资产">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oi4-Tj-Hdm">
+                                <rect key="frame" x="220" y="259" width="60" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="5Mj-x1-vfP"/>
+                                    <constraint firstAttribute="height" constant="50" id="sBx-8O-CT1"/>
+                                </constraints>
+                                <state key="normal" title="资产变更">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V1h-UH-DvL">
+                                <rect key="frame" x="173" y="344" width="60" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="A9u-oa-B82"/>
+                                    <constraint firstAttribute="height" constant="50" id="mYQ-Rh-Lec"/>
+                                </constraints>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cdc-f9-H2a">
+                                <rect key="frame" x="87" y="344" width="60" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="ZD6-DG-iqT"/>
+                                    <constraint firstAttribute="height" constant="50" id="c6L-Bf-hDM"/>
+                                </constraints>
+                                <state key="normal" title="资产查询">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y67-Br-Rnd">
+                                <rect key="frame" x="40" y="259" width="60" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="Dan-g6-0Qf"/>
+                                    <constraint firstAttribute="height" constant="50" id="z9W-oA-a20"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" title="资产盘点"/>
+                                <connections>
+                                    <segue destination="N9e-5g-Yqb" kind="push" id="yXf-EU-Url"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="资产变更流程" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="60" translatesAutoresizingMaskIntoConstraints="NO" id="cem-fa-SgI">
+                                <rect key="frame" x="173" y="344" width="60" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="V1h-UH-DvL" secondAttribute="trailing" constant="87" id="1BC-sT-7Yc"/>
+                            <constraint firstAttribute="centerY" secondItem="Upz-L3-yAE" secondAttribute="centerY" id="5yE-yG-BVa"/>
+                            <constraint firstAttribute="centerX" secondItem="XJ8-7w-Qia" secondAttribute="centerX" id="96q-ba-qub"/>
+                            <constraint firstAttribute="centerX" secondItem="Upz-L3-yAE" secondAttribute="centerX" id="Dm1-13-WaU"/>
+                            <constraint firstAttribute="centerY" secondItem="Upz-L3-yAE" secondAttribute="centerY" id="HVj-W8-8jq"/>
+                            <constraint firstAttribute="centerX" secondItem="Upz-L3-yAE" secondAttribute="centerX" id="MTu-go-jVt"/>
+                            <constraint firstAttribute="centerY" secondItem="Upz-L3-yAE" secondAttribute="centerY" id="Muh-q2-llR"/>
+                            <constraint firstAttribute="centerY" secondItem="Oi4-Tj-Hdm" secondAttribute="centerY" id="PHk-K1-NyU"/>
+                            <constraint firstItem="cem-fa-SgI" firstAttribute="top" secondItem="V1h-UH-DvL" secondAttribute="top" id="XOf-tk-kdp"/>
+                            <constraint firstItem="Upz-L3-yAE" firstAttribute="top" secondItem="XJ8-7w-Qia" secondAttribute="bottom" constant="40" id="g5L-AH-xZL"/>
+                            <constraint firstItem="cem-fa-SgI" firstAttribute="trailing" secondItem="V1h-UH-DvL" secondAttribute="trailing" id="jeg-YF-XQ8"/>
+                            <constraint firstItem="Upz-L3-yAE" firstAttribute="leading" secondItem="Y67-Br-Rnd" secondAttribute="trailing" constant="40" id="jl8-l8-hUT"/>
+                            <constraint firstItem="Cdc-f9-H2a" firstAttribute="top" secondItem="V1h-UH-DvL" secondAttribute="top" id="k1D-fV-PBZ"/>
+                            <constraint firstItem="V1h-UH-DvL" firstAttribute="top" secondItem="Upz-L3-yAE" secondAttribute="bottom" constant="40" id="kGp-ez-hYX"/>
+                            <constraint firstItem="V1h-UH-DvL" firstAttribute="leading" secondItem="Cdc-f9-H2a" secondAttribute="trailing" constant="26" id="nc3-YM-CXh"/>
+                            <constraint firstItem="Oi4-Tj-Hdm" firstAttribute="leading" secondItem="Upz-L3-yAE" secondAttribute="trailing" constant="40" id="oLY-vP-k0Z"/>
+                            <constraint firstItem="cem-fa-SgI" firstAttribute="leading" secondItem="V1h-UH-DvL" secondAttribute="leading" id="qfn-2t-ArA"/>
+                            <constraint firstItem="Cdc-f9-H2a" firstAttribute="bottom" secondItem="V1h-UH-DvL" secondAttribute="bottom" id="rFt-vc-TA0"/>
+                            <constraint firstAttribute="centerY" secondItem="Y67-Br-Rnd" secondAttribute="centerY" id="x1W-wP-m4q"/>
+                            <constraint firstItem="cem-fa-SgI" firstAttribute="bottom" secondItem="V1h-UH-DvL" secondAttribute="bottom" id="y3J-FI-NtW"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="资产信息系统" id="GF1-59-r0N">
+                        <barButtonItem key="leftBarButtonItem" image="Icon-Small.png" id="5Ls-9b-8gn"/>
+                        <barButtonItem key="rightBarButtonItem" image="Icon-Small.png" width="90" id="M1R-jV-dZe"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="AssetsChange" destination="Oi4-Tj-Hdm" id="Jt0-8P-tu1"/>
+                        <outlet property="AssetsCheck" destination="Y67-Br-Rnd" id="Hb3-m4-3m6"/>
+                        <outlet property="AssetsSearch" destination="Cdc-f9-H2a" id="wBz-FQ-M67"/>
+                        <outlet property="BarItem" destination="M1R-jV-dZe" id="Azq-sU-S2d"/>
+                        <outlet property="ContactInfo" destination="V1h-UH-DvL" id="rWQ-vw-2a1"/>
+                        <outlet property="personalAssets" destination="XJ8-7w-Qia" id="u55-AN-opn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PJ2-UH-RAa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-144" y="-912"/>
+        </scene>
+        <!--Assets Check View Controller - 资产盘点-->
+        <scene sceneID="Vv4-dT-2In">
+            <objects>
+                <viewController id="N9e-5g-Yqb" customClass="AssetsCheckViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7ga-06-aGb"/>
+                        <viewControllerLayoutGuide type="bottom" id="cLl-jj-EML"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ahL-mu-WDI">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ggD-gD-XXy">
+                                <rect key="frame" x="130" y="219" width="60" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="盘点任务">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="H8c-hm-ef2" kind="push" id="hrW-mH-m4z"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mSc-5S-Ert">
+                                <rect key="frame" x="130" y="269" width="60" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="直接盘点">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="vdA-B4-nj2" kind="push" id="4JF-ba-kNC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="资产盘点" id="3o1-hc-RyT"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wrm-bV-3Ez" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="358" y="-905"/>
+        </scene>
+        <!--View Controller - 盘点扫描-->
+        <scene sceneID="tyV-VS-vxh">
+            <objects>
+                <viewController id="vdA-B4-nj2" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="voD-Ln-p45"/>
+                        <viewControllerLayoutGuide type="bottom" id="tG9-Mf-ZSz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3am-au-7km">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="盘点扫描" id="hYf-ok-kKT"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2NY-5J-4Hh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="816" y="-591"/>
+        </scene>
+        <!--Table View Controller - 盘点任务-->
+        <scene sceneID="94s-yH-gSa">
+            <objects>
+                <tableViewController id="H8c-hm-ef2" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="4WF-uU-HIa">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="KI9-Rq-Fgj">
+                                <rect key="frame" x="0.0" y="86" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KI9-Rq-Fgj" id="9Bx-yr-bXg">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="H8c-hm-ef2" id="4Gi-Mc-jQI"/>
+                            <outlet property="delegate" destination="H8c-hm-ef2" id="DvR-h4-aaO"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="盘点任务" id="Oc7-dM-jd6"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kcG-in-kue" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="823" y="-1258"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Icon-Small.png" width="29" height="29"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
