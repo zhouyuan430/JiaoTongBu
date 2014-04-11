@@ -62,6 +62,9 @@
 		C00D1EED18F6DCF90026D610 /* AssetsCheckViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C00D1EEC18F6DCF90026D610 /* AssetsCheckViewController.m */; };
 		C00D1EF018F6E6A80026D610 /* AssignmentCheckViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C00D1EEF18F6E6A80026D610 /* AssignmentCheckViewController.m */; };
 		C00D1EF318F6E7670026D610 /* DirectCheckViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C00D1EF218F6E7670026D610 /* DirectCheckViewController.m */; };
+		C064A97618F78822004C8774 /* PersonalAssetsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C064A97518F78822004C8774 /* PersonalAssetsViewController.m */; };
+		C064A97918F7886D004C8774 /* AssetDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C064A97818F7886D004C8774 /* AssetDetailViewController.m */; };
+		C064A97C18F78B6E004C8774 /* AssetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C064A97B18F78B6E004C8774 /* AssetCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -188,6 +191,12 @@
 		C00D1EEF18F6E6A80026D610 /* AssignmentCheckViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssignmentCheckViewController.m; sourceTree = "<group>"; };
 		C00D1EF118F6E7670026D610 /* DirectCheckViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DirectCheckViewController.h; sourceTree = "<group>"; };
 		C00D1EF218F6E7670026D610 /* DirectCheckViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DirectCheckViewController.m; sourceTree = "<group>"; };
+		C064A97418F78822004C8774 /* PersonalAssetsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalAssetsViewController.h; sourceTree = "<group>"; };
+		C064A97518F78822004C8774 /* PersonalAssetsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalAssetsViewController.m; sourceTree = "<group>"; };
+		C064A97718F7886D004C8774 /* AssetDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssetDetailViewController.h; sourceTree = "<group>"; };
+		C064A97818F7886D004C8774 /* AssetDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssetDetailViewController.m; sourceTree = "<group>"; };
+		C064A97A18F78B6E004C8774 /* AssetCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssetCell.h; sourceTree = "<group>"; };
+		C064A97B18F78B6E004C8774 /* AssetCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssetCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -218,6 +227,8 @@
 		C00D1C5D18F6784F0026D610 = {
 			isa = PBXGroup;
 			children = (
+				C064A97318F787A2004C8774 /* Commen */,
+				C064A97218F785AA004C8774 /* PersonalAssets */,
 				C00D1EEA18F6DCDD0026D610 /* AssetsCheck */,
 				C00D1EE318F6CF120026D610 /* RootViewController */,
 				C00D1EC418F6843F0026D610 /* LogInViewController */,
@@ -496,6 +507,26 @@
 			path = AssetsCheck;
 			sourceTree = "<group>";
 		};
+		C064A97218F785AA004C8774 /* PersonalAssets */ = {
+			isa = PBXGroup;
+			children = (
+				C064A97418F78822004C8774 /* PersonalAssetsViewController.h */,
+				C064A97518F78822004C8774 /* PersonalAssetsViewController.m */,
+				C064A97718F7886D004C8774 /* AssetDetailViewController.h */,
+				C064A97818F7886D004C8774 /* AssetDetailViewController.m */,
+			);
+			path = PersonalAssets;
+			sourceTree = "<group>";
+		};
+		C064A97318F787A2004C8774 /* Commen */ = {
+			isa = PBXGroup;
+			children = (
+				C064A97A18F78B6E004C8774 /* AssetCell.h */,
+				C064A97B18F78B6E004C8774 /* AssetCell.m */,
+			);
+			path = Commen;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -604,10 +635,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				C00D1E3A18F67CA90026D610 /* AFHTTPRequestOperation.m in Sources */,
+				C064A97618F78822004C8774 /* PersonalAssetsViewController.m in Sources */,
 				C00D1E4718F67CA90026D610 /* UIImageView+AFNetworking.m in Sources */,
 				C00D1EE918F6CFF60026D610 /* LogInViewController.m in Sources */,
 				C00D1C8018F6784F0026D610 /* ViewController.m in Sources */,
 				C00D1E3B18F67CA90026D610 /* AFHTTPRequestOperationManager.m in Sources */,
+				C064A97C18F78B6E004C8774 /* AssetCell.m in Sources */,
 				C00D1E4818F67CA90026D610 /* UIProgressView+AFNetworking.m in Sources */,
 				C00D1E3D18F67CA90026D610 /* AFNetworkReachabilityManager.m in Sources */,
 				C00D1E4118F67CA90026D610 /* AFURLResponseSerialization.m in Sources */,
@@ -620,6 +653,7 @@
 				C00D1E3E18F67CA90026D610 /* AFSecurityPolicy.m in Sources */,
 				C00D1E4918F67CA90026D610 /* UIRefreshControl+AFNetworking.m in Sources */,
 				C00D1EE618F6CF220026D610 /* RootViewController.m in Sources */,
+				C064A97918F7886D004C8774 /* AssetDetailViewController.m in Sources */,
 				C00D1EF018F6E6A80026D610 /* AssignmentCheckViewController.m in Sources */,
 				C00D1E4A18F67CA90026D610 /* UIWebView+AFNetworking.m in Sources */,
 				C00D1EC318F680550026D610 /* MBProgressHUD.m in Sources */,
