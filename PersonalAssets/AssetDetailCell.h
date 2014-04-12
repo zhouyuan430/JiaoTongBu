@@ -1,5 +1,5 @@
 //
-//  AssetDetailViewController.h
+//  AssetDetailCell.h
 //  JiaoTongBu
 //
 //  Created by zhouyuan on 14-4-11.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AssetDetailViewController : UITableViewController
+@interface AssetDetailCell : UITableViewCell
 
 @end
